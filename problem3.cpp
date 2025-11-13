@@ -44,9 +44,13 @@ int main(){
         str cmd; cin >> cmd;
         if(cmd=="insert"){ int x; cin >> x; pq.insert(x); }
         else if(cmd=="size"){ pq.size();} 
-        else if(cmd=="get" || cmd=="extract"){
+        else if(cmd=="get"){
             str maxwrd; cin >> maxwrd;
-            cmd=="extract" ? pq.extractMax() : pq.getMax();
+            pq.getMax();
+        }
+        else if(cmd=="extract"){
+            str maxwrd; cin >> maxwrd;
+            pq.extractMax();
         }
     }    
     return 0;
